@@ -7,8 +7,6 @@ const {
   deleteGoal
 } = require('../controllers/goalController');
 
-// routes => /api/goals
-
 /* OLD ROUTES 
 router.get('/', getGoals);
 router.post('/', setGoal);
@@ -16,6 +14,7 @@ router.put('/:id', updateGoal);
 router.delete('/:id', deleteGoal);
 */
 
+// routes => /api/goals
 // NEW SHORTER ROUTES
 router.route('/').get(getGoals).post(setGoal);
 router.route('/:id').put(updateGoal).delete(deleteGoal);
