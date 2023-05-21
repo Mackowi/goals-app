@@ -43,14 +43,14 @@ function Register() {
   
   const onSubmit = (e) => {
     e.preventDefault()
-    let userData
     if(password !== password2) {
       toast.error('Passwords do not match')
     } else {
-      userData = { name, email, password }
+      const userData = { name, email, password }
+      
+      dispatch(register(userData))
     }
 
-    dispatch(register(userData))
   }   
 
   if(isLoading) {
