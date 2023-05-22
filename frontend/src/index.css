@@ -130,6 +130,7 @@ h3 {
 }
 
 .form-group label {
+  font-size: large;
   text-align: left;
   display: block;
   margin: 0 0 5px 3px;
